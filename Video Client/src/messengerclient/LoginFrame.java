@@ -201,7 +201,7 @@ public class LoginFrame extends javax.swing.JFrame {
 	            	clientManager.connect(clientStatus,sIp, sPort);
 	            	addBuddyList();
 	            	userName=loginP.tf_user_name.getText();
-	            	setTitle("Video Messenger ("+userName+")");
+	            	setTitle("접속 매니저 ("+userName+")");
 	            	clientManager.sendMessage("login "+userName);
 	            	clientManager.receiveMessage(clientListListener, clientWindowListener);
 	            	mi_sign_in.setEnabled(false);
@@ -209,17 +209,17 @@ public class LoginFrame extends javax.swing.JFrame {
         		}	
         		else
         		{
-        			javax.swing.JOptionPane.showMessageDialog(this,"Please enter your Server Settings");	
+        			javax.swing.JOptionPane.showMessageDialog(this,"IP부터 세팅해주세요");	
         		}
         	}
         	else
         	{
-        		javax.swing.JOptionPane.showMessageDialog(this,"Please enter your Server Settings");
+        		javax.swing.JOptionPane.showMessageDialog(this,"IP부터 세팅해주세요");
         	}		
             
         }
         else
-            javax.swing.JOptionPane.showMessageDialog(this,"Please enter your Name ");
+            javax.swing.JOptionPane.showMessageDialog(this,"이름을 입력해주세요 ");
     }
 
     private void mi_sign_outActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mi_sign_outActionPerformed

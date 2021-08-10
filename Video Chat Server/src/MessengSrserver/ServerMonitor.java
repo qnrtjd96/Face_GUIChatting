@@ -65,7 +65,7 @@ public class ServerMonitor extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("H-Server");
+        setTitle("서버");
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
@@ -97,14 +97,14 @@ public class ServerMonitor extends javax.swing.JFrame {
             .addGap(0, 233, Short.MAX_VALUE)
         );
 
-        but_start.setText("Start");
+        but_start.setText("시작하기");
         but_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 but_startActionPerformed(evt);
             }
         });
 
-        but_stop.setText("Stop");
+        but_stop.setText("멈추기");
         but_stop.setEnabled(false);
         but_stop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
